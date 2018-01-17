@@ -6,6 +6,7 @@
 
 # Ignore bundler config.
 /.bundle
+/vendor/bundle
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
@@ -17,7 +18,23 @@
 !/log/.keep
 !/tmp/.keep
 
-/node_modules
+*.rbc
+capybara-*.html
+.rspec
+/public/system
+/coverage/
+/spec/tmp
+*.orig
+rerun.txt
+pickle-email-*.html
+
 /yarn-error.log
 
+# Ignore pow environment settings
+.powenv
+
+# Ignore Byebug command history file.
 .byebug_history
+
+# Ignore node_modules
+node_modules/
