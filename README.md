@@ -1,24 +1,12 @@
 # README
 
 This README would normally document whatever steps are necessary to get the
-application up and running.
+application up and running ...
 
-Things you may want to cover:
+... but in this special case, it is going to tell you something about the
+creator of this mess :D
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Karla already took Computer Science as a major in high school, but somehow her
+many interests lead her into business studies (and a lot of extracurricular
+activities on the side). But somehow the tech world has never really let go
+of her, so here she is, torturing you with her RoR experiments. Good luck!
