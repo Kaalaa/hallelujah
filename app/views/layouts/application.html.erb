@@ -3,20 +3,30 @@
   <head>
     <title>Hallelujah</title>
 
-    <!-- This is embedded ruby and the = sign inserts the ruby output into the html file -->
-    <%= csrf_meta_tags %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- This is embedded ruby and the = sign inserts the ruby output into the html file -->
+    <%= csrf_meta_tags %>
   </head>
 
   <body>
-
     <nav>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
+      <ul class="nav nav-pills">
+        <li role="presentation" class="active">
+          <a href="#">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="#">About</a>
+        </li>
+        <li role="presentation">
+          <a href="#">Contact</a>
+        </li>
       </ul>
     </nav>
 
@@ -25,6 +35,5 @@
     <footer>
       &copy; 2017 Geek shirts
     </footer>
-
   </body>
 </html>

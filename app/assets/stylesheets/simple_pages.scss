@@ -1,3 +1,37 @@
 // Place all the styles related to the simple_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  padding: 2em 0em 2em 0em;
+}
+
+.content {
+  font-family: Tahoma, Verdana, sans-serif;
+  font-size: 1em;
+  padding-bottom: 3em;
+}
+
+nav ul li {
+  display: inline-block;
+  padding-right: 1em;
+  padding-top: 1em;
+  font-size: 1em;
+  font-family: Helvetica, Arial, sans-serif;
+  letter-spacing: 0.1em;
+}
+
+footer {
+  font-family: Tahoma, Verdana, sans-serif;
+  font-size: 0.8em;
+}
