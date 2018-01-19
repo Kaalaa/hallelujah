@@ -52,5 +52,5 @@ group :development do
 end
 
 group :production do
-  gem 'pg'
+  gem 'pg', '~> 0.20' #I had an error and found this fix (https://stackoverflow.com/questions/39261996/heroku-and-rails-gem-load-error-with-postgres-however-it-is-specified-in-gemfi)
 end
