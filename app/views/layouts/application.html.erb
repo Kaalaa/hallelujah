@@ -16,24 +16,26 @@
   </head>
 
   <body>
-    <nav>
-      <ul class="nav nav-pills">
-        <li role="presentation" class="active">
-          <a href="#">Home</a>
-        </li>
-        <li role="presentation">
-          <a href="#">About</a>
-        </li>
-        <li role="presentation">
-          <a href="#">Contact</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav>
+        <ul class="nav nav-pills">
+          <li role="presentation" class="active">
+            <a href="#">Home</a>
+          </li>
+          <li role="presentation">
+            <a href="#">About</a>
+          </li>
+          <li role="presentation">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
 
-    <%= yield %>
+      <%= yield %>
 
-    <footer>
-      &copy; 2017 Geek shirts
-    </footer>
+      <footer class="footer">
+        <p class="copyright">&copy; 2018 Geek shirts</p>
+      </footer>
+    </div> <!-- end container -->
   </body>
 </html>
