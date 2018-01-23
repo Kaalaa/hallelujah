@@ -32,13 +32,15 @@ nav ul li {
 }
 
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  width: 100%;
+  width: inherit;
   height: 3em;
+  background-color: white;
 }
 
 .footer p {
   font-family: Tahoma, Verdana, sans-serif;
   font-size: 0.8em;
+  padding-top: 1rem;
 }
