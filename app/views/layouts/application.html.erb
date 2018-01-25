@@ -20,16 +20,16 @@
       <nav>
         <ul class="nav nav-pills">
           <li role="presentation" class="active">
-            <a href="../simple_pages/index">Home</a>
+            <%= link_to "Home", simple_pages_index_path %>
           </li>
           <li role="presentation">
-            <a href="../simple_pages/about">About</a>
+            <%= link_to "About", simple_pages_about_path %>
           </li>
           <li role="presentation">
-            <a href="../products">Products</a>
+            <%= link_to "Products", products_path %>
           </li>
           <li role="presentation">
-            <a href="../simple_pages/contact">Contact</a>
+            <%= link_to "Contact", simple_pages_contact_path %>
           </li>
         </ul>
       </nav>
