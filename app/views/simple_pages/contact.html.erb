@@ -1,5 +1,25 @@
-<h1>Contact</h1>
-<div class="contact content">
+<h1>Say hi</h1>
+
+<%= flash[:notice] %>
+
+<%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
+<div class="row col-md-4">
+  <div class="form-group">
+    <%= form.label :name %>
+    <%= form.text_field :name, class: "form-control", placeholder: "Enter Name" %>
+  </div>
+  <div class="form-group">
+    <%= form.label :email %>
+    <%= form.text_field :email, class: "form-control", placeholder: "Enter Email" %>
+  </div>
+  <div class="form-group">
+    <%= form.label :message %>
+    <%= form.text_area :message, class: "form-control", placeholder: "Enter Message", rows: 10 %>
+  </div>
+<%= form.submit "Send message", class: "btn btn-primary" %>
+</div>
+<% end %>
+<!-- <div class="contact content">
   <p>Well, we'd much rather have you buy a shirt. But if you instist, here is how to reach us:</p>
   <p>Geek shirts</p>
   <p>Wilson Street 33</p>
@@ -7,4 +27,4 @@
   </br>
   <p>Tel: 030 / 123456789</p>
   <p>Email: hi@geekshirts.com</p>
-</div>
+</div> -->
