@@ -17,8 +17,8 @@
 
   <body>
     <div class="container">
-      <nav>
-        <ul class="nav nav-pills">
+      <nav class="navbar navbar-default">
+        <ul class="nav navbar-nav">
           <li role="presentation" class="active">
             <%= link_to "Home", simple_pages_index_path %>
           </li>
@@ -31,14 +31,14 @@
           <li role="presentation">
             <%= link_to "Contact", simple_pages_contact_path %>
           </li>
+          <li>
+          <!-- Search form -->
+          <%= form_with(url: products_path, method: 'get', local: true, class: "navbar-form") do |form| %>
+          <%= form.text_field :q, id: 'q', value: params[:q], class: "form-control", placeholder: "Search" %>
+          <%= form.submit 'Submit', class: "btn btn-default" %>
+          <% end %>
+          </li>
         </ul>
-
-        <!-- Search form -->
-        <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
-          <%= form.label :q, 'Search for:' %>
-          <%= form.text_field :q, id: 'q', value: params[:q] %>
-          <%= form.submit 'Search' %>
-        <% end %>
       </nav>
 
       <%= yield %>
