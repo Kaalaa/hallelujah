@@ -19,9 +19,11 @@
   <%#= render partial: "product", locals: {product: product} %>
   <%#= render product %>
   <%#= render partial: "product", collection: @products %>
-<!-- <div class="product_range"> -->
-  <%= render @products %>
-<!-- </div>  end product_range -->
+<% @products.in_groups_of(3, false) do |products| %>
+  <div class="row product_range"> -->
+    <%= render @products %>
+  </div> <!-- end product_range -->
+<% end %>
 
 <br>
 <p><%= link_to 'New Product', new_product_path %></p>

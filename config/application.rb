@@ -16,6 +16,7 @@ require "sprockets/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+# NEVER CHANGE THIS NAME HERE :D
 module Hallelujah
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.

@@ -1,4 +1,4 @@
-<div class="col-sm-2 col-md-4">
+<div class="col-md-4">
   <%= link_to image_tag(product.image_url, class: "img-responsive"), product_path(product.id) %>
   <h1><%= link_to product.name, product_path(product.id) %></h1>
   <p><%= product.description %></p>
@@ -7,8 +7,8 @@
   <p><%= link_to 'Show', product %> | <%= link_to 'Edit', edit_product_path(product) %> | <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
 </div><!-- /col -->
 
-<!-- For the image_tag I would like to check with a if statement, whether the resource/image exists, then either return nothing (leaving the div empty) or return the image_url.
-<#% if @checking_whether_image_exists %>
+<!-- Check if the image exists, then either return  the image_url or return nothing (leaving the div empty).
+<#% if product.image_url.present? %>
  <div class="true"><%#= image_tag(product.image_url, class: "img-responsive") %></div>
 <#% else %>
  <div class="false"></div>
