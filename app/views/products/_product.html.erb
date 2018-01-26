@@ -4,7 +4,10 @@
   <p><%= product.description %></p>
   <p><%= product.colour %></p>
   <strong>$ <%= product.price %></strong>
-  <p><%= link_to 'Show', product %> | <%= link_to 'Edit', edit_product_path(product) %> | <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+  <p class="action-btns">
+    <%= link_to 'Show', product, class: "btn btn-primary" %>
+    <%= link_to 'Edit', edit_product_path(product), class: "btn btn-default" %>
+    <%= link_to 'Destroy', product, class: "btn btn-default", method: :delete, data: { confirm: 'Are you sure?' } %></p>
 </div><!-- /col -->
 
 <!-- Check if the image exists, then either return  the image_url or return nothing (leaving the div empty).
