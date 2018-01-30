@@ -50,10 +50,13 @@
         </ul>
       </nav>
 
-      <!-- alert alert-success -->
-      <p class="notice"><%= notice %></p>
-      <!-- alert alert-warning -->
-      <p class="alert"><%= alert %></p>
+
+      <% if notice %>
+        <p id="notice" class="alert alert-success"><%= notice %></p>
+      <% end %>
+      <% if alert %>
+        <p id="alert" class="alert alert-warning"><%= alert %></p>
+      <% end %>
 
 
       <%= yield %>

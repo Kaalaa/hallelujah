@@ -14,3 +14,6 @@
 //= require turbolinks
 //= require jquery3
 //= require_tree .
+
+// This is not working, no idea why
+$('.alert').delay(2000).fadeOut();

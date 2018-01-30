@@ -37,8 +37,12 @@ gem 'jquery-rails'
 
 gem 'sendgrid-ruby'
 
-#Helps with authentication
+# Helps with authentication
 gem 'devise'
+
+# Helps with authorization
+gem 'cancancan', '~> 1.10'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
