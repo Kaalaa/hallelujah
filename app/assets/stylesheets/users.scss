@@ -1,0 +1,17 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.user-table,
+.user-table div {
+  padding: 0px;
+  margin-bottom: 0.5rem;
+}
+
+.user-table .header {
+  font-weight: bold;
+}
+
+.user-table .user-data {
+  padding: 6px 0;
+}

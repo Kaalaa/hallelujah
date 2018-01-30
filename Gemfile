@@ -37,6 +37,8 @@ gem 'jquery-rails'
 
 gem 'sendgrid-ruby'
 
+#Helps with authentication
+gem 'devise'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

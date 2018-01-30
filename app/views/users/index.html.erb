@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Users</h1>
+
+<div class="user-table">
+<div class="col-md-12">
+  <div class="col-md-2">
+    <p class="header">First name</p>
+  </div>
+  <div class="col-md-2">
+    <p class="header">Last name</p>
+  </div>
+</div>
+<% @users.each do |user| %>
+  <div class="col-md-12">
+    <div class="col-md-2">
+      <p class="user-data"><%= user.first_name %></p>
+    </div>
+    <div class="col-md-2">
+      <p class="user-data"><%= user.last_name %></p>
+    </div>
+    <div class="col-md-4">
+      <%= link_to 'Show', user, class: "btn btn-primary" %>
+      <%= link_to 'Edit', edit_user_path(user), class: "btn btn-default" %>
+      <%= link_to 'Destroy', user, class: "btn btn-default", method: :delete, data: { confirm: 'Are you sure?' } %>
+    </div>
+  </div>
+<% end %>
+
+
+<%= link_to 'New User', new_user_path, class: "btn btn-default" %>
+</div>
+
+<!-- Just discovered that Bootstrap tables don't work with grid, but with HTML-tables: https://www.w3schools.com/bootstrap/bootstrap_tables.asp -->
