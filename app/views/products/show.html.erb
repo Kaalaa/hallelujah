@@ -2,7 +2,7 @@
 
 <h1>Details</h1>
 
-<div class="content">
+<div class="content col-md-8">
 
   <p>
     <%= image_tag(@product.image_url, class: "img-responsive") %>
@@ -34,16 +34,26 @@
   </p>
 
   <p>
+    <strong>Average Rating:</strong>
+    <div class="rated" data-score="<%= @product.average_rating %>"></div>
+  </p>
+  <!-- <p>
     <strong>Highest rating:</strong>
-    <%= @product.highest_rating_comment %>
+    <p><%#= @product.highest_rating_comment.rating %> star(s) - "<%#= @product.highest_rating_comment.body %>"</p>
   </p>
 
   <p>
     <strong>Lowest rating:</strong>
-    <%= @product.lowest_rating_comment %>
-  </p>
+    <p><%#= @product.lowest_rating_comment.rating %> star(s) - "<%#= @product.lowest_rating_comment.body %>"</p>
+  </p> -->
+
+  <br>
+  <%= link_to 'Edit', edit_product_path(@product), class: "btn btn-default" %>
+  <%= link_to 'Back', products_path, class: "btn btn-default" %>
+
+  <%= render 'new_comment' %>
+  <br>
+
+  <%= render 'comments' %>
 
 </div> <!-- end content div -->
-
-<%= link_to 'Edit', edit_product_path(@product), class: "btn btn-default" %>
-<%= link_to 'Back', products_path, class: "btn btn-default" %>
